@@ -1,0 +1,73 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Divisée</title>
+    <style>
+         body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('/site\ images/essai.jpg'); /* Ajouter l'image de fond */
+
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .section:hover {
+            background-color: #f0f0f0;
+        }
+
+        .section a {
+            text-decoration: none;
+            color: #333;
+            font-size: 24px;
+            text-align: center; /* Aligner le texte au centre */
+        }
+
+        .section img {
+            max-width: 300px; /* Ajustez la taille de l'image selon vos besoins */
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="section">
+            <img src="/images/client.png" alt="Section 1 Image">
+            <a href="signupclient.php">Clients</a>
+        </div>
+        <div class="section">
+            <img src="/images/employe.png" alt="Section 2 Image">
+            <a href="connectionemp.php">Employés</a>
+        </div>
+        <div class="section">
+            <img src="/images/admin.png" alt="Section 3 Image">
+            <a href="#">Administration</a>
+        </div>
+        <div class="section">
+            <img src="/images/candidat.png" alt="Section 4 Image">
+            <a href="#">Candidat</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
